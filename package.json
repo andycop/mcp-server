@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/server.js",
-    "dev": "tsx watch src/server.ts",
+    "start": "node dist/server-new.js",
+    "dev": "tsx watch src/server-new.ts",
+    "dev-old": "tsx watch src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -23,6 +24,9 @@
     "helmet": "^8.1.0",
     "jose": "^6.0.11",
     "zod": "^3.25.67"
+  },
+  "optionalDependencies": {
+    "ioredis": "^5.4.2"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
