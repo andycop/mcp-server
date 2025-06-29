@@ -2,11 +2,12 @@
 
 ## Project Status & Recent Changes
 
-### Current State (2025-06-27)
+### Current State (2025-06-29)
 - **✅ COMPLETED**: Major architectural refactoring of MCP server
 - **✅ COMPLETED**: Comprehensive logging anonymization system
 - **✅ COMPLETED**: Migration from monolithic to modular structure
-- **✅ COMPLETED**: Old server removed, new structure is now primary
+- **✅ COMPLETED**: OAuth 2.0 refresh token implementation
+- **✅ COMPLETED**: Token rotation and persistent authentication
 
 ### What We Just Accomplished
 
@@ -25,6 +26,12 @@
   - Strings <8 chars: `ab*de` (first 2 + last 2)
 - **Auto-protects**: tokens, secrets, session IDs, tenant IDs, auth codes, client secrets
 - **Applied throughout**: OAuth flows, authentication, MCP sessions, startup logging
+
+#### 🔄 **OAuth 2.0 Refresh Token Support**
+- **Persistent authentication** - 7-day refresh tokens prevent session timeouts
+- **Token rotation** - Enhanced security through automatic refresh token rotation
+- **Dual grant types** - Supports both `authorization_code` and `refresh_token` flows
+- **Proper error handling** - OAuth-compliant error responses with detailed logging
 
 #### ⚡ **Enhanced Features**
 - **Optional Redis support** - Auto-detects `REDIS_URL`, graceful fallback
