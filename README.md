@@ -30,11 +30,11 @@ Create a `.env` file:
 # Required
 MS_CLIENT_ID=your-azure-client-id
 MS_CLIENT_SECRET=your-azure-client-secret
+MS_TENANT=your-azure-tenant-id
 SESSION_SECRET=your-random-session-secret
 REDIRECT_URI=http://localhost:3131/auth/callback
 
 # Optional
-MS_TENANT=common
 REDIS_URL=redis://localhost:6379
 PORT=3131
 NODE_ENV=development

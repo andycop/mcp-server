@@ -65,12 +65,12 @@ src/
 ```env
 # Required
 MS_CLIENT_ID=azure-client-id
-MS_CLIENT_SECRET=azure-client-secret  
+MS_CLIENT_SECRET=azure-client-secret
+MS_TENANT=azure-tenant-id
 SESSION_SECRET=random-session-secret
 REDIRECT_URI=http://localhost:3131/auth/callback
 
 # Optional
-MS_TENANT=common (or specific tenant ID)
 REDIS_URL=redis://localhost:6379 (enables Redis storage)
 PORT=3131
 NODE_ENV=development
